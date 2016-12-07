@@ -1,0 +1,16 @@
+Package: tabletools
+Title: Supporting function for working with (html,Flextables) tables in Rmarkdown 
+Version: 0.0.0.9000
+Authors@R: person("Carsten", "Behring", email = "cartsen.behring@efsa.europa.eu", role = c("aut", "cre"))
+Description: This package contains supporting function for working with (html,Flextables) tables in Rmarkdown. 
+Depends:
+    R (>= 3.2.2)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports:
+    webshot,
+    magick,
+    ReporteRs,
+    magrittr
+RoxygenNote: 5.0.1
