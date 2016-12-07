@@ -25,7 +25,7 @@ htmlToPng <- function(html,zoom = 1,rotate = 0,vwidth = 992,vheight = 74,cliprec
 #' @importFrom magrittr %>%
 #' @return Path of png file created
 #' @export
-ftToPng <- function(ft,zoom = 1,rotate=0,vwidth = 992,vheight = 744,cliprect=0) {
+ftToPng <- function(ft,zoom = 1,rotate=0,vwidth = 992,vheight = 744,cliprect=NULL) {
     ft %>% ReporteRs::as.html() %>%
         htmlToPng(zoom,rotate,vwidth,vheight,cliprect)
 }
