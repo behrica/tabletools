@@ -2,6 +2,10 @@
 #' @param html HTML text to convert
 #' @param zoom Zoomfactor
 #' @param rotate Rotation 0 - 360
+#' @param vwidth viewport width to set screenshot boundaries
+#' @param vheight viewport height to set screenshot boundaries
+#' @param cliprect use cliprect to set screenshot boundaries
+#' @param selector use CSS selector toset screenshot boundaries
 #' @return A file name of the temporary png file created
 #' @export
 htmlToPng <- function(html,zoom = 1,rotate = 0,vwidth = 992,vheight = 74,cliprect=NULL,selector=NULL) {
@@ -22,6 +26,10 @@ htmlToPng <- function(html,zoom = 1,rotate = 0,vwidth = 992,vheight = 74,cliprec
 #' @param ft The FlexTable object to convert
 #' @param zoom Zoomm level
 #' @param rotate Rotation 0 - 360
+#' @param vwidth viewport width to set screenshot boundaries
+#' @param vheight viewport height to set screenshot boundaries
+#' @param cliprect use cliprect to set screenshot boundaries
+#' @param selector use CSS selector toset screenshot boundaries
 #' @importFrom magrittr %>%
 #' @return Path of png file created
 #' @export

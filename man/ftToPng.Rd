@@ -2,9 +2,10 @@
 % Please edit documentation in R/tabletools.R
 \name{ftToPng}
 \alias{ftToPng}
-\title{Converts a FlexTable intpa png file}
+\title{Converts a FlexTable into a png file}
 \usage{
-ftToPng(ft, zoom = 1, rotate = 0)
+ftToPng(ft, zoom = 1, rotate = 0, vwidth = 992, vheight = 744,
+  cliprect = NULL, selector = NULL)
 }
 \arguments{
 \item{ft}{The FlexTable object to convert}
@@ -12,11 +13,19 @@ ftToPng(ft, zoom = 1, rotate = 0)
 \item{zoom}{Zoomm level}
 
 \item{rotate}{Rotation 0 - 360}
+
+\item{vwidth}{viewport width to set screenshot boundaries}
+
+\item{vheight}{viewport height to set screenshot boundaries}
+
+\item{cliprect}{use cliprect to set screenshot boundaries}
+
+\item{selector}{use CSS selector toset screenshot boundaries}
 }
 \value{
 Path of png file created
 }
 \description{
-Converts a FlexTable intpa png file
+Converts a FlexTable into a png file
 }
 

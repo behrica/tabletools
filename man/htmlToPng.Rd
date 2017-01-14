@@ -4,7 +4,8 @@
 \alias{htmlToPng}
 \title{Converts any html into a png file}
 \usage{
-htmlToPng(html, zoom = 1, rotate = 0)
+htmlToPng(html, zoom = 1, rotate = 0, vwidth = 992, vheight = 74,
+  cliprect = NULL, selector = NULL)
 }
 \arguments{
 \item{html}{HTML text to convert}
@@ -12,6 +13,14 @@ htmlToPng(html, zoom = 1, rotate = 0)
 \item{zoom}{Zoomfactor}
 
 \item{rotate}{Rotation 0 - 360}
+
+\item{vwidth}{viewport width to set screenshot boundaries}
+
+\item{vheight}{viewport height to set screenshot boundaries}
+
+\item{cliprect}{use cliprect to set screenshot boundaries}
+
+\item{selector}{use CSS selector toset screenshot boundaries}
 }
 \value{
 A file name of the temporary png file created
